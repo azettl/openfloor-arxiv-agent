@@ -25,7 +25,7 @@ app.use((req, res, next) => {
 // Create the arXiv research agent instance
 const arxivAgent = createArxivAgent({
   speakerUri: 'tag:openfloor-research.com,2025:arxiv-agent',
-  serviceUrl: process.env.SERVICE_URL || 'https://your-arxiv-agent.com/',
+  serviceUrl: process.env.SERVICE_URL || 'https://krsnzn5xm3.us-east-1.awsapprunner.com/',
   name: 'ArXiv Research Specialist',
   organization: 'OpenFloor Research Division'
 });
@@ -88,12 +88,6 @@ app.use((error: Error, req: Request, res: Response, next: NextFunction) => {
     error: 'Internal server error',
     message: error.message
   });
-});
-
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
-  console.log(`ArXiv Research Agent listening on port ${PORT}`);
-  console.log(`Health check: http://localhost:${PORT}/health`);
 });
 
 export default app;
