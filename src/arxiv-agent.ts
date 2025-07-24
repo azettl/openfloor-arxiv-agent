@@ -81,7 +81,7 @@ import {
         if (!this._isAcademicQuery(query)) {
           return createTextUtterance({
             speakerUri: this.speakerUri,
-            text: "📚 I specialize in academic research. Try queries about scientific topics, algorithms, machine learning, physics, mathematics, or other research areas.",
+            text: "📚 I specialize in academic research. Try queries about scientific topics, algorithms, machine learning, physics, mathematics, or other research areas. Use terms like 'research', 'study', 'analysis', 'scientific', 'algorithm', 'method', 'machine learning', 'ai', 'artificial intelligence', 'deep learning', 'neural network', 'computer science', 'physics', 'mathematics', 'quantum', 'cryptography', 'blockchain', 'paper', 'academic'",
             to: { speakerUri: inEnvelope.sender.speakerUri }
           });
         }
