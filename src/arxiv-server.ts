@@ -9,7 +9,7 @@ const app = express();
 app.use(express.json());
 
 // CORS middleware
-const allowedOrigin = 'https://openfloor.azettl.net';
+const allowedOrigin = '*';
 app.use((req, res, next) => {
   if (req.headers.origin === allowedOrigin) {
     res.header('Access-Control-Allow-Origin', allowedOrigin);
