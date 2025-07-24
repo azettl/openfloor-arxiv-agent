@@ -27,7 +27,7 @@ const arxivAgent = createArxivAgent({
   speakerUri: 'tag:openfloor-research.com,2025:arxiv-agent',
   serviceUrl: process.env.SERVICE_URL || 'https://krsnzn5xm3.us-east-1.awsapprunner.com/',
   name: 'ArXiv Research Specialist',
-  organization: 'OpenFloor Research Division'
+  organization: 'OpenFloor Demo Corp'
 });
 
 // Health check endpoint
