@@ -18,7 +18,7 @@
   "author": "Andreas Zettl",
   "license": "Apache-2.0",
   "dependencies": {
-    "@openfloor/protocol": "^0.0.1",
+    "@openfloor/protocol": "^0.0.2",
     "express": "^4.18.2"
   },
   "devDependencies": {
